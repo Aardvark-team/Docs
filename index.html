@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" theme="dark">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Documentation</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+		 <script src="https://CSS-Library.hg0428.repl.co/script.js"></script>
+   </head>
+   <body>
+		 <menu id="menu">
+			 <a href="https://github.com/hg0428/ADK" id="github">Github</a>
+			 <strong><a href="/">Basics</a></strong>
+			 <a href="/class.html">Classes</a>
+			 <a href="/blocks.html">Blocks</a>
+			 <a href="/directive.html">Directives</a>
+			 <a href="/Builtin.html">Builtin</a>
+		 </menu>
+      <h1>Aardvark Basics</h1>
+      <div class="funct"  id="over">
+				<code><h2>Comments</h2></code><banner>✅ Ready but ⚠️ experimental</banner>
+				<br/><br/>
+				<div class="funct">
+					 Comments are crucial to programming languages, they are useful as reminders, notes, or tips, so we went with the best and easiest to use comment system we could. <br/>
+					Single line comments start with <code>//</code> and end at the end of the line, if you want comments to be multi-line, then just end it with <code>\\</code>. The begining is the same for both single and multi-line comments.
+				</div>
+				<code><h2>Variables</h2></code><banner>✅ Ready!</banner>
+				<br/><br/>
+				<div class="funct">
+					 If you know Python or JavaScript, variables in Aardvark should be very easy for you. They require no special keywords and Aardvark will automaticly detect the type for you. <br/>
+					<strong>Example – String, number, list:</strong>
+					<pre><code>a = "hello" // A string<br/>b = 0 // A number<br/>c = 1.2 // Another number!<br/>l = [a, b, c, "I love lists!"] // A list of items</code></pre>
+					There are many other types of data too, so make sure to check out the Type section of these docs.
+				</div>
+				<code><h2>Input and Output</h2></code><banner>✅ Ready!</banner>
+				<br/><br/>
+				<div class="funct">
+					 Input and Output are crucial to making a program interactive and fun, without them most programs are useless! Here we will talk about the most basic form of input and output, the console. Outputing to the console is very simple, just use the <code>output</code> function, it works like <code>print</code> in Python and <code>console.log</code> in JavaScript. 
+					<pre><code>output("Hello World!")</code></pre>
+					The input function is also usefull, it works very similarly to the <code>input</code> function in Python.
+					<pre><code>name = input("What is your name?")</code></pre>
+					Using only these you can make some simple yet fun projects.<br/>
+					<strong>Example – Print my name:</strong>
+					<pre><code>name = input("Hello, what is your name? ")
+output("Hi,", name, "!")</code></pre>
+					In the example above, if I run the code and input <code>Hudson</code> when it asks for my name, then it will output <code>Hi, Hudson !</code>
+				</div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>

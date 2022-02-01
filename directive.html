@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" theme="dark">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Documentation</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+		 <script src="https://CSS-Library.hg0428.repl.co/script.js"></script>
+   </head>
+   <body>
+		 <menu id="menu">
+			 <a href="https://github.com/hg0428/ADK" id="github">Github</a>
+			 <a href="/">Basics</a>
+			 <a href="/class.html">Classes</a>
+			 <a href="/blocks.html">Blocks</a>
+			 <strong><a href="/directive.html">Directives</a></strong>
+			 <a href="/Builtin.html">Builtin</a>
+		 </menu>
+      <h1>Directives</h1>
+      <div class="funct" id="over">
+				<code><h3>#include [file]</h3></code>
+				<br/><br/>
+				<div class="funct">
+					 Includes the specified file as if it we part of the code. You can use the <code>as</code> keyword to save the data in that file to a variable.<br/> <code>#include os as os</code> Sets the variable <code>os</code> to the global scope of the <code>os</code> module.
+				</div>
+				<code id="noteJump"><h3>#jump [line]</h3></code><banner>⚠️ Not ready in latest build</banner>
+				<br/><br/>
+				<div class="funct">
+					 Jumps to <code>[line]</code>. This allows for something called <strong>jump loops</strong>. Here is an example of an infinite jump loop:
+					<pre><code>output("Hello")
+#jump 1 // jumps to line 1</code></pre>
+				</div>
+				<code><h3>#max-memory [bytes]</h3></code><banner>⚠️ Not ready in latest build</banner>
+				<br/><br/>
+				<div class="funct">
+					 Sets the maximum allowed memory for the program.
+				</div>
+				<code id="Define"><h3>#define [new block] as [old blocks]</h3></code><banner>⚠️ Not ready in latest build</banner>
+				<br/><br/>
+				<div class="funct">
+					 Defines blocks (possibly also keywords in the future). You can set them as any block(s) using the <a href="/blocks.html#noteMerge"><strong>Block Merge</strong></a> method.
+				</div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>

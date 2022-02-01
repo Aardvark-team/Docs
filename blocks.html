@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" theme="dark">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Documentation</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+		 <script src="https://CSS-Library.hg0428.repl.co/script.js"></script>
+   </head>
+   <body>
+		 <menu id="menu">
+			 <a href="https://github.com/hg0428/ADK" id="github">Github</a>
+			 <a href="/">Basics</a>
+			 <a href="/class.html">Classes</a>
+			 <strong><a href="/blocks.html">Blocks</a></strong>
+			 <a href="/directive.html">Directives</a>
+			 <a href="/Builtin.html">Builtin</a>
+		 </menu>
+      <h1>Blocks</h1>
+      <div class="funct"  id="over">
+				<code><h3>If and Else</h3></code><banner>⚠️ Caution: Experimental</banner>
+				<br/><br/>
+				<div class="funct">
+					 The if block works the same as in most other languages. Here is the syntax:
+					<pre><code>if a == b {
+	//do something
+} 
+</code></pre>
+					Pretty simple, right? Else is even simpler.
+					<pre><code>if a == b {
+	//do something
+} else {
+	//Otherwise do something else
+}</code></pre>
+				</div>
+				<code id="noteWhileLoop"><h3>While Loop</h3></code><banner>⚠️ Caution: Experimental</banner>
+				<br/><br/>
+				<div class="funct">
+					While loops are a type of loop. <br/><strong>Example – Count to ten:</strong>
+					<pre><code>counter = 0
+while counter &lt; 10 {
+	counter++
+	output(counter)
+} // -&gt; 0 1 2 3 4 5 6 7 8 9
+</code></pre>
+					Also see: <a href="/directive.html#noteJump"><code><strong>#jump</strong></code></a>, <a href="#noteForLoop"><strong>For Loop</strong></a>
+				</div>
+				<code id="noteForLoop"><h3>For Loop</h3></code><banner>⚠️ Not ready in latest build</banner>
+				<br/><br/>
+				<div class="funct">
+					For loops are a type of loop. For Loops loop through an iterable. <br/><strong>Example – print array items:</strong>
+					<pre><code>list = ["hi", "hey", "hello"]
+for item in list {
+	output(item)
+} // -&gt; hi hey hello
+</code></pre>
+					Also see: <a href="/directive.html"><code><strong>#jump</strong></code></a>, <a href="#noteWhileLoop"><strong>While Loop</strong></a>
+				</div>
+				<code id="noteTryExcept"><h3>Try and Except</h3></code><banner>⚠️ Not ready in latest build</banner>
+				<br/><br/>
+				<div class="funct">
+					Try and Except are used to stop errors and to report problems. A <code>try</code> block can be used without an <code>except</code> block, but the excpet block requires the try block <br/><strong>Example – Does it exist?:</strong>
+					<pre><code>x = {x:0, y:0, z:0}
+try {
+	output(x.n)
+} except {
+	output("It doesn't exist")
+}
+</code></pre> Here is a little more advanced example. 
+					<pre><code>try {
+	//do something that may cause a error
+} except Error as e{
+	output(e.message, e.errorCode, e.line, e.column, e.type)
+}</code></pre> In the previous example,  if a error is caused, it will output the error, 
+the error code, the line, the column, the type of error, and then continue running the program.
+				</div>
+				<code id="noteMerge"><h3>Block Merging</h3></code><banner>⚠️ Caution: Only partially functional</banner>
+				<br/><br/>
+				<div class="funct">
+					 Merge 2 or more blocks together to create what you need. Save the block you created with <a href="/directive.html#noteDefine"><code><strong>#define</strong></code></a>.<br/>
+					Lets try a simple example, merging an if and an else. 
+					<pre><code>
+if a == b {
+	//do something
+} else if a == c{
+	// This does the same thing as the if being in the else
+}
+</code>
+					</pre>
+				</div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
